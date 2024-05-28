@@ -1,6 +1,7 @@
-package com.nathan.efluentes.controller.dto;
+package com.senai.efluentes.controller.dto;
 
-import com.nathan.efluentes.entity.User;
+import com.senai.efluentes.entity.User;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

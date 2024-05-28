@@ -1,4 +1,4 @@
-package com.nathan.efluentes.entity;
+package com.senai.efluentes.entity;
 
 import java.sql.Date;
 
@@ -13,7 +13,7 @@ import lombok.*;
 @NoArgsConstructor // Anotação do Lombok que gera automaticamente um construtor sem argumentos.
 @AllArgsConstructor // Anotação do Lombok que gera automaticamente um construtor com argumentos para todos os campos da classe.
 @EqualsAndHashCode // Anotação do Lombok gera os métodos equals(), hashCode() e também um método canEqual() para verificar se o objeto comparado é uma instância da mesma classe.
-public class Equipment { // Declaração da classe User.
+public class Sample { // Declaração da classe Sample.
 
   @Id // Anotação que indica que o campo 'id' é a chave primária da entidade.
   private long id; 
@@ -25,9 +25,15 @@ public class Equipment { // Declaração da classe User.
   private String type;
 
   @NonNull
-  private Date registrationDate;
+  private Date collectionDate;
 
   @NonNull
-  private Double capacity;
-  
+  private String local;
+
+  @NonNull
+  private String chemicalParameters;
+
+  @NonNull
+  private Boolean status;
+
 } 

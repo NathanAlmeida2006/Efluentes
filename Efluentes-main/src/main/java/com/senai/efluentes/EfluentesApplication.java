@@ -1,4 +1,4 @@
-package com.nathan.efluentes;
+package com.senai.efluentes;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

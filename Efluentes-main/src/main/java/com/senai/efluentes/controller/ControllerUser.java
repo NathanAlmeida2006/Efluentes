@@ -1,15 +1,16 @@
-package com.nathan.efluentes.controller;
+package com.senai.efluentes.controller;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import com.nathan.efluentes.controller.dto.UptadeUserFormDTO;
-import com.nathan.efluentes.controller.dto.UserDTO;
-import com.nathan.efluentes.controller.dto.UserFormDTO;
-import com.nathan.efluentes.entity.User;
-import com.nathan.efluentes.repository.UserRepository;
+
+import com.senai.efluentes.controller.dto.UptadeUserFormDTO;
+import com.senai.efluentes.controller.dto.UserDTO;
+import com.senai.efluentes.controller.dto.UserFormDTO;
+import com.senai.efluentes.entity.User;
+import com.senai.efluentes.repository.UserRepository;
 
 import jakarta.transaction.Transactional;
 

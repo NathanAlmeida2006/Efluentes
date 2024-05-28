@@ -1,15 +1,14 @@
-package com.nathan.efluentes.controller.dto;
+package com.senai.efluentes.controller.dto;
 
-import com.nathan.efluentes.entity.User;
+import com.senai.efluentes.entity.User;
+
 import lombok.Getter;
-import java.util.List;
-import java.util.stream.Collectors;
 
 /**
- * Representa os dados de um usuário a serem enviados como resposta.
+ * Representa os dados de atualização de um usuário.
  */
 @Getter
-public class UserDTO {
+public class UptadeUserFormDTO {
 
     private long id;
     private String name;
@@ -24,11 +23,11 @@ public class UserDTO {
     private String password;
 
     /**
-     * Construtor que recebe um objeto User e extrai os dados relevantes.
+     * Construtor que recebe um objeto User e extrai os dados relevantes para atualização.
      *
      * @param user Objeto User contendo os dados do usuário.
      */
-    public UserDTO(User user) {
+    public UptadeUserFormDTO(User user) {
         id = user.getId();
         name = user.getName();
         age = user.getAge();
@@ -40,15 +39,6 @@ public class UserDTO {
         telephone = user.getTelephone();
         type = user.getType();
         password = user.getPassword();
-    }
 
-    /**
-     * Converte uma lista de objetos User em uma lista de objetos UserDTO.
-     *
-     * @param users Lista de usuários.
-     * @return Lista de UserDTO contendo os dados dos usuários.
-     */
-    public static List<UserDTO> converter(List<User> users) {
-        return users.stream().map(UserDTO::new).collect(Collectors.toList());
     }
 }
