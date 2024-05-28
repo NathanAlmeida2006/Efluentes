@@ -13,7 +13,14 @@ public class UserFormDTO {
 
     private long id;
     private String name;
+    private int age;
     private String email;
+    private char sex;
+    private int cep;
+    private Integer cpf;
+    private String address;
+    private Integer telephone;
+    private String type;
     private String password;
 
     /**
@@ -25,7 +32,14 @@ public class UserFormDTO {
         User user = new User();
         user.setId(id);
         user.setName(name);
+        user.setAge(age);
         user.setEmail(email);
+        user.setSex(sex);
+        user.setCep(cep);
+        user.setCpf(cpf);
+        user.setAddress(address);
+        user.setTelephone(telephone);
+        user.setType(type);
         user.setPassword(password);
         return user;
     }

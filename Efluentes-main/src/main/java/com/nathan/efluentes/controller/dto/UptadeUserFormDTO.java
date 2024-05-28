@@ -11,7 +11,14 @@ public class UptadeUserFormDTO {
 
     private long id;
     private String name;
+    private int age;
     private String email;
+    private char sex;
+    private int cep;
+    private Integer cpf;
+    private String address;
+    private Integer telephone;
+    private String type;
     private String password;
 
     /**
@@ -22,7 +29,15 @@ public class UptadeUserFormDTO {
     public UptadeUserFormDTO(User user) {
         id = user.getId();
         name = user.getName();
+        age = user.getAge();
         email = user.getEmail();
+        sex = user.getSex();
+        cep = user.getCep();
+        cpf = user.getCpf();
+        address = user.getAddress();
+        telephone = user.getTelephone();
+        type = user.getType();
         password = user.getPassword();
+
     }
 }
