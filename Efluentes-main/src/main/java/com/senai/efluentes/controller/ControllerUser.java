@@ -6,9 +6,9 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import com.senai.efluentes.controller.dto.UptadeUserFormDTO;
-import com.senai.efluentes.controller.dto.UserDTO;
-import com.senai.efluentes.controller.dto.UserFormDTO;
+import com.senai.efluentes.controller.dto.user_dto.UptadeUserFormDTO;
+import com.senai.efluentes.controller.dto.user_dto.UserDTO;
+import com.senai.efluentes.controller.dto.user_dto.UserFormDTO;
 import com.senai.efluentes.entity.User;
 import com.senai.efluentes.repository.UserRepository;
 

@@ -1,4 +1,4 @@
-package com.senai.efluentes.controller.dto;
+package com.senai.efluentes.controller.dto.user_dto;
 
 import com.senai.efluentes.entity.User;
 
